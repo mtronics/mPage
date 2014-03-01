@@ -1,0 +1,114 @@
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[id="mtr0"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[id="mtr1"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin input[id="mtr2"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[id="mtr3"] {
+  margin-bottom: -1px;
+  border-radius: 0;
+  border-radius: 0;
+}
+.form-signin input[id="mtr4"] {
+  margin-bottom: -1px;
+  border-radius: 0;
+  border-radius: 0;
+}
+.form-signin input[id="mtr5"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin input[id="mtr6"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[id="mtr7"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.input-group input[id="adm0"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.input-group input[id="adm1"] {
+  margin-bottom: -1px;
+  border-radius: 0;
+  border-radius: 0;
+}
+.input-group input[id="adm2"] {
+  margin-bottom: -1px;
+  border-radius: 0;
+  border-radius: 0;
+}
+.input-group input[id="adm3"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group input[id="adm4"] {
+  margin-bottom: 10px;
+}
+
+.input-group input[id="cha0"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.input-group input[id="cha1"] {
+  margin-bottom: -1px;
+  border-radius: 0;
+  border-radius: 0;
+}
+.input-group input[id="cha2"] {
+  margin-bottom: -1px;
+  border-radius: 0;
+  border-radius: 0;
+}
+.input-group input[id="cha3"] {
+  margin-bottom: -1px;
+  border-radius: 0;
+  border-radius: 0;
+}
+.input-group input[id="cha4"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
