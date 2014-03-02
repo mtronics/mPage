@@ -21,14 +21,14 @@
 				echo fillWithPageData($data, $manifest, $activePage);
 				
 				//Doing the same thing with the template head
-				$template = getFileContents("templates/" . $manifest['template'] . "_head.template");
+				$template = getFileContents("templates/" . $manifest['template'] . "/head.template");
 				echo fillWithPageData($template, $manifest, $activePage);
 				break;
 						
 			case 'foot':
 				
 				//Reading the template foot and filling in all the variables
-				$template = getFileContents("templates/" . $manifest['template'] . "_foot.template");
+				$template = getFileContents("templates/" . $manifest['template'] . "/foot.template");
 				echo fillWithPageData($template, $manifest, $activePage);
 				break;
 				

@@ -38,7 +38,7 @@
 		
 		foreach(getPages() as $page) {
 			
-			$tab = getFileContents("templates/" . $manifest['template'] . "_navs.template");
+			$tab = getFileContents("templates/" . $manifest['template'] . "/navs.template");
 			
 			$tab = str_replace("%page%", "index.php?page=" . $page, $tab);
 			$tab = str_replace("%pageName%", $page, $tab);

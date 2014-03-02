@@ -7,6 +7,7 @@
 	 * Do not modify or redistribute it in any way.
 	 */
 	 
+	 //Sets the current page to home and overwrites it if the URL parameter is set
 	 $currentPage = "Home";
 	 if(isset($_GET['page'])) $currentPage = $_GET['page'];
 	 
@@ -14,8 +15,10 @@
 	 include_once 'core/core.php';
 	 include_once 'core/basePageComponents.php';
 	 
+	 //Includes the current page
 	 include_once "pages/" . $currentPage . "/page.php";
 	 
+	 //Base structure & contents (the whole page) are printed
 	 getBaseStructure($manifest, $currentPage, "head");
 	 getContents();
 	 getBaseStructure($manifest, $currentPage, "foot");
