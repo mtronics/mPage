@@ -8,10 +8,17 @@
 	 */
 	 
 	 include_once 'manifest.php';
+	 include_once 'core/pageComponents.php';
 	 
 	 function getContents() {
 	 	
 		echo "<h1>It works!</h1>";
+		glyphIcon("cloud");
+		glyphIcon("heart");
+		glyphIcon("pencil");
+		glyphIcon("eye-open");
+		glyphIcon("globe");
+		glyphIcon("sound-5-1");
 		
 	 }
 	
