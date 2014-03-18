@@ -7,14 +7,15 @@
 	 * Do not modify or redistribute it in any way.
 	 */
 	 
-	 //Prints the desired glyphicon
-	 function glyphIcon($glyph) {
+	//Prints the desired glyphicon
+	function glyphIcon($glyph) {
 	 	
 		echo '<span class="glyphicon glyphicon-' . $glyph . '"></span>';
 		
 	 }
-	 
-	 function alert($message, $type, $dismissable = true) {
+	
+	//Prints a colored box with text in it. Valid types: success, warning, danger, info
+	function alert($message, $type, $dismissable = true) {
 	 	
 		if($dismissable) {
 			
@@ -30,5 +31,14 @@
 		}
 		
 	 }
+	
+	//Prints a colored label with text in it. Valid types: (none), primary, success, warning, danger, info
+	function label($message, $type = "default") {
+		
+		echo '<span class="label label-' . $type . '">' . $message . '</span>';
+		
+	}
+	
+	
 	
 ?>

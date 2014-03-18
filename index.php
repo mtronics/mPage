@@ -14,6 +14,7 @@
 	 //Includes the core files (everything that's needed)
 	 include_once 'core/core.php';
 	 include_once 'core/basePageComponents.php';
+	 include_once 'core/userController.php';
 	 
 	 //Includes the current page
 	 include_once "pages/" . $currentPage . "/page.php";
@@ -21,6 +22,8 @@
 	 //Base structure & contents (the whole page) are printed
 	 getBaseStructure($manifest, $currentPage, "head");
 	 getContents();
+	 signIn("mtronics", "test");
+	 print_r($_SESSION);
 	 getBaseStructure($manifest, $currentPage, "foot");
 	
 ?>
