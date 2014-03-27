@@ -17,13 +17,14 @@
 	 include_once 'core/userController.php';
 	 
 	 //Includes the current page
-	 include_once "pages/" . $currentPage . "/page.php";
+	 if($currentPage != "signIn") include_once "pages/" . $currentPage . "/page.php";
+	 else include_once "core/userControllerUI.php";
 	 
 	 //Base structure & contents (the whole page) are printed
 	 getBaseStructure($manifest, $currentPage, "head");
 	 getContents();
 	 signIn("mtronics", "test");
-	 print_r($_SESSION);
+	 print_r($sessionData);
 	 getBaseStructure($manifest, $currentPage, "foot");
 	
 ?>

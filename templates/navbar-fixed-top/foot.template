@@ -1,7 +1,7 @@
 		</div>
 							
 		<nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
-			<p class="navbar-text navbar-left">Copyright &copy; %globalName% %globalDateOfCreation% - %currentDate%</p>
+			<p class="navbar-text navbar-left">Copyright &copy; %globalAuthor% %globalDateOfCreation% - %currentDate%</p>
 		</nav>
 		
 	    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>

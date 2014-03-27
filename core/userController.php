@@ -41,18 +41,10 @@
 		$_SESSION['profilePicture'] = $result['profilePicture'];
 		$_SESSION['isAdmin'] = $result['isAdmin'];
 		
-		//Starts the session
-		setcookie("userCredentials", $username . ":" . $password, 0);
+		global $sessionData;
+		$sessionData = $_SESSION;
+		
 		establishSession();
-		
-	}
-	
-	//Returns the user credentials from a cookie if available
-	function getCookieCredentials() {
-		
-		$cookie = $_COOKIE['userCredentials'];
-		$cookie = explode(":", $cookie);
-		return $cookie;
 		
 	}
 	

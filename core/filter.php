@@ -7,6 +7,7 @@
 	 * Do not modify or redistribute it in any way.
 	 */
 	 
+	 include_once 'core.php';
 	 include_once 'pages.php';
 	 
 	 //Replaces %variables% in strings with variables in mPage
@@ -26,6 +27,9 @@
 		
 		$input = str_replace("%currentDate%", date("Y"), $input);
 		$input = str_replace("%navTabs%", getNavTabs($manifest, $activePage), $input);
+		
+		global $sessionData;
+		$input = str_replace("%signIn%", getCustomTab(FALSE, "index.php?page=signIn", $sessionData['name'], "navbar-fixed-top"), $input);
 		
 		return $input;
 		

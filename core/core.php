@@ -11,6 +11,8 @@
 	 include_once 'data.php';
 	 include_once 'userController.php';
 	 
+	 $sessionData = Array("name" => "Sign in", "description" => "You can sign in here.");
+	 
 	 //Connects to the specified mySQL database
 	 function establishMySqlConnection() {
 		
@@ -24,12 +26,25 @@
 	 //Continues the last session if possible
 	 function establishSession() {
 	 	
-		$cookieCredentials = getCookieCredentials();
-		if($cookieCredentials[0] != NULL && $_SESSION['id'] != NULL) {
-			
+		global $sessionData;
+		if(isset($sessionData['id'])) {
+				
 			session_start();
-			$_SESSION['isActive'] = TRUE;
-			
+			$sessionData['name'] = $sessionData['firstName'];
+			$sessionData['description'] = "You are logged in as " 
+				. $sessionData['firstName'] 
+				. " " 
+				. $sessionData['lastName']
+				. " ("
+				. $sessionData['username']
+				. ")";
+					
+		}
+		else {
+				
+			$sessionData['name'] = "Sign in"; 
+			$sessionData['description'] = "You can sign in here.";
+		
 		}
 		
 	 }

@@ -30,7 +30,21 @@
 		return $output;
 		
 	}
+	
+	function getCustomTab($isActive, $link, $content, $template)
+	{
 		
+		$tab = getFileContents("templates/" . $template . "/navs.template");
+		
+		$tab = str_replace("%page%", $link, $tab);
+		$tab = str_replace("%pageName%", $content, $tab);
+		if($isActive) $tab = str_replace("%active%", 'class="active"', $tab);
+		else $tab = str_replace("%active%", "", $tab);
+		
+		return $tab;
+		
+	}
+	
 	//Gets a template-based list of pages
 	function getNavTabs($manifest, $activePage) {
 		
